@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="text">
+         Main Page
+
+    </div>
+    <br>
+    <form action="/roblox">
+        <div>
+                         <div class="input-data textarea">
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="Roblox" onclick="/roblox">
+
+               </div>
+            </div>
+         </div>
+    </div>
+    </form> <form action="/logout">
+    <div>
+                         <div class="input-data textarea">
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="Logout" onclick="/logout">
+
+               </div>
+            </div>
+         </div>
+    </div>
+    </form>
+</div>
+{% endblock %}
