@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<ul>
+    {% for post in posts %}
+        <li>{{ post.title }}</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
+
+
+https://codepen.io/mattc0m/pen/rNdMjKX
