@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Загрузка и скачивание файлов</title>
+</head>
+<body>
+    <h1>Загрузка и скачивание файлов</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Загрузить</button>
+    </form>
+    <hr>
+    <h2>Загруженные файлы</h2>
+    <ul>
+        {% for filename in filenames %}
+            <li><a href="/download/{{ filename }}">{{ filename }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
